@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void jsparse() {
-        String urlApi = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000";
+        String urlApi = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1154";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, urlApi, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 Gson gson = new Gson();
                 Respuesta pk = gson.fromJson(response.toString(), Respuesta.class);
                 adapter = new AdaptadorPokemon(pk.getResults());
+
                 recyclerView.setAdapter(adapter);
 
 

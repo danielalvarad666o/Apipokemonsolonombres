@@ -7,6 +7,17 @@
     android:background="@color/cardview_shadow_start_color"
     >
 
+    <ImageView
+        android:id="@+id/fotoImageView"
+        android:layout_width="227dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="366dp"
@@ -21,5 +32,5 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.893" />
 </androidx.constraintlayout.widget.ConstraintLayout>
